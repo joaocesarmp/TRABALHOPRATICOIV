@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forest Livros - Livros</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: help;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -100px; 
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="livros.html">Livros</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <h1>Forest Livros</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Capa</th>
+                    <th>Nome do Livro</th>
+                    <th>Autor</th>
+                    <th>Preço</th>
+                    <th>Detalhes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="tooltip">
+                            <img src="../img/orgulho.jpg" alt="Livro 4">
+                            <span class="tooltiptext">Um clássico da literatura que aborda questões de orgulho, preconceito e amor.</span>
+                        </div>
+                    </td>
+                    <td>Orgulho e Preconceito</td>
+                    <td>Jane Austen</td>
+                    <td>R$ 25,00</td>
+                    <td><a href="orgulhoPreconceito.html">Ver Detalhes</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="tooltip">
+                            <img src="../img/1984.jpg" alt="Livro 5">
+                            <span class="tooltiptext">Um clássico distópico que explora temas de vigilância, controle governamental e liberdade individual.</span>
+                        </div>
+                    </td>
+                    <td>1984</td>
+                    <td>George Orwell</td>
+                    <td>R$ 29,99</td>
+                    <td><a href="1984.html">Ver Detalhes</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="tooltip">
+                            <img src="../img/pequenoPrincipe.jpg" alt="Livro 6">
+                            <span class="tooltiptext">Uma história encantadora que fala sobre amizade, amor e o significado da vida, contada através das aventuras de um pequeno príncipe.</span>
+                        </div>
+                    </td>
+                    <td>O Pequeno Príncipe</td>
+                    <td>Antoine de Saint-Exupéry</td>
+                    <td>R$ 20,00</td>
+                    <td><a href="pequenoPrincipe.html">Ver Detalhes</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>© 2024 Forest Livros</p>
+    </footer>
+</body>
+
+</html>
